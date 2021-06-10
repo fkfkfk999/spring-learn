@@ -5,8 +5,9 @@ package yoo.springlearn.domain;
  */
 public class UserVO {
 
-    // ID, 이름, 연락처, 나이, 메일주소
+    // ID, 유저넘버, 이름, 연락처, 나이, 메일주소
     private String userId;
+    private Long serialNo;
     private String userName;
     private String userPhone;
     private int userAge;
@@ -17,6 +18,13 @@ public class UserVO {
     }
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+    
+    public Long getSerialNo() {
+        return serialNo;
+    }
+    public void setSerialNo(Long serialNo) {
+        this.serialNo = serialNo;
     }
     public String getUserName() {
         return userName;

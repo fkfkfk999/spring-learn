@@ -8,6 +8,7 @@ import yoo.springlearn.domain.UserVO;
 public interface UserRepository {
     UserVO insertUser(UserVO vo);
     Optional<UserVO> findById(String id);
+    Optional<UserVO> findBySerialNo(long serialNo);
     Optional<UserVO> findByName(String id);
     List<UserVO> findAll();
 }
