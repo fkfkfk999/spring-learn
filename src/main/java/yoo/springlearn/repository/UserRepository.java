@@ -9,6 +9,6 @@ public interface UserRepository {
     UserVO insertUser(UserVO vo);
     Optional<UserVO> findById(String id);
     Optional<UserVO> findBySerialNo(long serialNo);
-    Optional<UserVO> findByName(String id);
+    Optional<UserVO> findByName(String name);
     List<UserVO> findAll();
 }

@@ -32,12 +32,11 @@ public class UserRepositoryImpl implements UserRepository{
     @Override
     public UserVO insertUser(UserVO vo) {
         vo.setSerialNo(++sequence);
-        vo.setUserAge(33);
-        vo.setUserId("tester");
-        vo.setUserMail("abc@naver.com");
-        vo.setUserName("YOO");
-        vo.setUserPhone("111-222-3333");
         store.put(vo.getSerialNo(), vo);
         return vo;
+    }
+
+    public void clearStore(){
+        store.clear();
     }
 }
